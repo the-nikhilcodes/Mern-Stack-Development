@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Table Properties Example</title>
+    <style>
+      table {
+        width: 100%; /* table width */
+        border: 3px solid black; /* table border */
+        border-spacing: 10px 15px; /* space between cells (when separate) */
+        table-layout: fixed; /* auto | fixed */
+        background-color: #f9f9f9; /* table background */
+        caption-side: top; /* top | bottom */
+      }
+
+      caption {
+        font-weight: bold;
+        font-size: 18px;
+        margin: 10px;
+        text-decoration: underline;
+      }
+
+      th,
+      td {
+        border: 2px solid darkblue; /* cell border */
+        padding: 10px; /* cell padding */
+        text-align: center; /* left | right | center */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>All Table Properties Example</h2>
+
+    <table>
+      <caption>
+        Student Marks Table
+      </caption>
+
+      <!-- Colgroup Example -->
+      <colgroup class="colgroup">
+        <col span="1" />
+        <col span="1" />
+        <col span="1" />
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="highlight">Nikhil</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Saurabh</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Satyam</td>
+          <td>85</td>
+          <!-- empty cell to show empty-cells property -->
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">Average</td>
+          <td>87.5</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
