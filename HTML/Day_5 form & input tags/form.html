@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Example</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+
+  <form action="/submit" method="post">
+    <!-- Text input -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <!-- Email input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <!-- Radio input -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Checkbox input -->
+    <label>Interests:</label>
+    <input type="checkbox" id="coding" name="interest" value="coding">
+    <label for="coding">Coding</label>
+    <input type="checkbox" id="sports" name="interest" value="sports">
+    <label for="sports">Sports</label><br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>

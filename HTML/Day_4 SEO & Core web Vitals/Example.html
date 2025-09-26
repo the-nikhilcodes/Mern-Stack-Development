@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Web Vitals Example</title>
+
+  <!-- Preload important assets for faster LCP -->
+  <link rel="preload" href="hero.jpg" as="image">
+  <link rel="preload" href="main.css" as="style">
+  <link rel="preload" href="main.js" as="script">
+
+  <!-- Inline critical CSS to avoid render-blocking -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    button {
+      padding: 10px 20px;
+      background: #ff6600;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    /* Reserve space for images to prevent CLS */
+    .hero {
+      width: 100%;
+      height: 300px; /* reserved space */
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Largest Contentful Paint (LCP) element -->
+  <header>
+    <h1>Welcome to My Fast Website</h1>
+  </header>
+
+  <!-- LCP image with reserved space (reduces CLS) -->
+  <img src="hero.jpg" alt="Beautiful landscape" class="hero">
+
+  <!-- Interactive element (tests FID responsiveness) -->
+  <main>
+    <p>This website is optimized for Core Web Vitals: LCP, FID, and CLS.</p>
+    <button onclick="alert('Hello!')">Click Me</button>
+  </main>
+
+  <!-- Defer JavaScript for better FID -->
+  <script src="main.js" defer></script>
+
+</body>
+</html>
