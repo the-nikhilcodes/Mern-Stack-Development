@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Color Properties Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;   /* page background */
+      color: #333;                 /* default text color */
+      padding: 20px;
+    }
+
+    .text-color {
+      color: darkred;              /* text color */
+    }
+
+    .background-color {
+      background-color: lightblue; /* background color */
+      padding: 10px;
+    }
+
+    .border-color {
+      border: 3px solid green;     /* border color */
+      padding: 10px;
+    }
+
+    .outline-color {
+      outline: 3px dashed orange;  /* outline color */
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .caret-color input {
+      caret-color: red;            /* caret (typing cursor) color */
+      padding: 5px;
+    }
+
+    .text-decoration-color {
+      text-decoration: underline;
+      text-decoration-color: blue; /* underline color */
+      text-decoration-thickness: 2px;
+    }
+
+    .accent-color input[type="checkbox"],
+    .accent-color input[type="radio"] {
+      accent-color: purple;        /* form control accent color */
+    }
+
+    .column-rule-color {
+      column-count: 2;
+      column-rule: 5px solid crimson; /* rule between columns */
+    }
+
+    .fill-stroke svg {
+      width: 100px;
+      height: 100px;
+    }
+    .fill-stroke circle {
+      fill: yellow;                /* inside color */
+      stroke: black;               /* border color */
+      stroke-width: 3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Color Properties Demo</h2>
+
+  <p class="text-color">This text uses <b>color</b>.</p>
+  <p class="background-color">This paragraph has a <b>background-color</b>.</p>
+  <p class="border-color">This has a <b>border-color</b>.</p>
+  <p class="outline-color">This uses <b>outline-color</b>.</p>
+
+  <div class="caret-color">
+    Caret color in input: <input type="text" placeholder="Type here">
+  </div>
+
+  <p class="text-decoration-color">This uses <b>text-decoration-color</b>.</p>
+
+  <div class="accent-color">
+    <label><input type="checkbox" checked> Checkbox with accent-color</label><br>
+    <label><input type="radio" name="demo" checked> Radio with accent-color</label>
+  </div>
+
+  <div class="column-rule-color">
+    <p>This example shows the <b>column-rule-color</b> property between two columns of text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+  <div class="fill-stroke">
+    <p>SVG with <b>fill</b> and <b>stroke</b> colors:</p>
+    <svg>
+      <circle cx="50" cy="50" r="40"></circle>
+    </svg>
+  </div>
+
+</body>
+</html>

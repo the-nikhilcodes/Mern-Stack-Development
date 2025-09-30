@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All CSS Text Properties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .example {
+      /* --- Text appearance --- */
+      color: darkblue;                        /* text color */
+      font-size: 18px;                        /* font size */
+      font-style: italic;                     /* normal | italic | oblique */
+      font-weight: bold;                      /* font weight */
+      font-variant: small-caps;               /* small-caps */
+      text-transform: uppercase;              /* uppercase, lowercase, capitalize */
+
+      /* --- Alignment & spacing --- */
+      text-align: center;                     /* left, right, center, justify */
+      text-align-last: right;                 /* alignment of last line */
+      line-height: 2;                         /* line spacing */
+      letter-spacing: 3px;                    /* spacing between letters */
+      word-spacing: 12px;                     /* spacing between words */
+      white-space: nowrap;                    /* normal | nowrap | pre | pre-wrap */
+      word-break: break-all;                  /* word-break rules */
+      overflow-wrap: break-word;              /* wrapping behavior */
+      text-indent: 40px;                      /* first line indent */
+
+      /* --- Decoration --- */
+      text-decoration: underline overline wavy red; /* line-through | underline | overline */
+      text-decoration-thickness: 2px;
+      text-decoration-skip-ink: none;         /* control ink skipping */
+      text-underline-offset: 6px;             /* distance of underline from text */
+
+      text-shadow: 2px 2px 6px gray;          /* shadow behind text */
+
+      /* --- Direction and writing --- */
+      direction: rtl;                         /* rtl | ltr */
+      unicode-bidi: bidi-override;            /* bidi text handling */
+      writing-mode: vertical-rl;              /* horizontal-tb | vertical-rl | vertical-lr */
+      text-orientation: upright;              /* mixed | upright */
+    }
+
+    .truncate {
+      width: 300px;
+      border: 1px solid black;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;                /* clip | ellipsis | string */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>All CSS Text Properties Example</h2>
+
+  <p class="example">
+    This is an example paragraph showing most CSS text properties together in a single styled block.
+  </p>
+
+  <p class="truncate">
+    This is a very long text that will be truncated with an ellipsis when it overflows the box.
+  </p>
+
+</body>
+</html>

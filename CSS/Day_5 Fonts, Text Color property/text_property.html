@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Text Properties Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .example {
+      color: darkblue;                     /* text color */
+      direction: rtl;                      /* text direction (right-to-left) */
+      unicode-bidi: bidi-override;         /* control text direction */
+      letter-spacing: 2px;                 /* space between letters */
+      word-spacing: 10px;                  /* space between words */
+      line-height: 1.8;                    /* space between lines */
+      text-align: center;                  /* text alignment */
+      text-decoration: underline overline wavy red; /* underline/overline/line-through */
+      text-transform: uppercase;           /* capitalize, uppercase, lowercase */
+      text-indent: 50px;                   /* indent first line */
+      white-space: nowrap;                 /* handle whitespace (nowrap, pre, etc.) */
+      text-shadow: 2px 2px 5px gray;       /* shadow for text */
+    }
+
+    .truncate {
+      width: 300px;
+      border: 1px solid black;
+      overflow: hidden;
+      text-overflow: ellipsis;  /* shows "..." if text is too long */
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Text Properties Demo</h2>
+
+  <p class="example">
+    This text demonstrates almost all CSS text properties in a single block.
+  </p>
+
+  <p class="truncate">
+    This is a very long text that will be truncated with an ellipsis when it overflows the box.
+  </p>
+
+</body>
+</html>

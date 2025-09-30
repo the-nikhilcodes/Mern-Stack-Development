@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Specificity Example</title>
+  <style>
+    p {
+      color: blue;   /* element selector */
+    }
+
+    .highlight {
+      color: green;  /* class selector */
+    }
+
+    #special {
+      color: red;    /* id selector */
+    }
+
+    p.inline {
+      color: orange; /* element + class */
+    }
+  </style>
+</head>
+<body>
+  <p>This is a normal paragraph (blue).</p>
+  <p class="highlight">This paragraph uses a class (green).</p>
+  <p id="special">This paragraph uses an ID (red).</p>
+  <p class="inline">This paragraph has element + class (orange).</p>
+</body>
+</html>
