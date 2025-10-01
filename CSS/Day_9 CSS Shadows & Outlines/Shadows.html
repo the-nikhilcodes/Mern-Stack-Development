@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadows & Outlines Example</title>
+  <style>
+    /* Box with shadow */
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 20px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 20px;
+      /* Box shadow: x-offset, y-offset, blur, color */
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Text with shadow */
+    .text-shadow {
+      font-size: 30px;
+      color: darkblue;
+      /* Text shadow: x-offset, y-offset, blur, color */
+      text-shadow: 2px 2px 4px gray;
+    }
+
+    /* Box with outline */
+    .outlined {
+      width: 200px;
+      height: 100px;
+      background-color: pink;
+      margin: 20px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 20px;
+      /* Outline does not affect layout */
+      outline: 3px solid red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">Box Shadow</div>
+
+  <p class="text-shadow">Text Shadow</p>
+
+  <div class="outlined">With Outline</div>
+
+</body>
+</html>
