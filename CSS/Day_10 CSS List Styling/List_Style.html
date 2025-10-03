@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Styling Example</title>
+  <style>
+    /* Basic unordered list with square bullets */
+    ul.square-list {
+      list-style-type: square;
+    }
+
+    /* Ordered list with Roman numerals */
+    ol.roman-list {
+      list-style-type: upper-roman;
+    }
+
+    /* Using a custom image as the bullet */
+    ul.image-list {
+      list-style-image: url('https://via.placeholder.com/15'); /* small image */
+    }
+
+    /* Removing bullets entirely */
+    ul.no-style {
+      list-style-type: none;
+      padding-left: 0; /* remove default padding */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Unordered List with Squares</h2>
+  <ul class="square-list">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ul>
+
+  <h2>Ordered List with Roman Numerals</h2>
+  <ol class="roman-list">
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+  </ol>
+
+  <h2>Unordered List with Custom Image</h2>
+  <ul class="image-list">
+    <li>Dog</li>
+    <li>Cat</li>
+    <li>Rabbit</li>
+  </ul>
+
+  <h2>List with No Bullets</h2>
+  <ul class="no-style">
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+
+</body>
+</html>

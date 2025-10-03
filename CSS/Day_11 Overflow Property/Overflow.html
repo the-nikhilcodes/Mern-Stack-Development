@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Overflow Example</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      border: 2px solid black;
+      margin: 15px;
+      padding: 10px;
+      background: #f5f5f5;
+    }
+
+    .visible {
+      overflow: visible; /* default: content spills outside */
+    }
+
+    .hidden {
+      overflow: hidden; /* extra content is clipped */
+    }
+
+    .scroll {
+      overflow: scroll; /* always shows scrollbars */
+    }
+
+    .auto {
+      overflow: auto; /* scrollbars only if needed */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>overflow: visible</h2>
+  <div class="box visible">
+    This is some long text that will overflow the box and remain visible outside of it.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+
+  <h2>overflow: hidden</h2>
+  <div class="box hidden">
+    This is some long text that will overflow but will be cut off at the box boundaries.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+
+  <h2>overflow: scroll</h2>
+  <div class="box scroll">
+    This is some long text that will force scrollbars to appear even if content fits inside.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+
+  <h2>overflow: auto</h2>
+  <div class="box auto">
+    This is some long text that will add scrollbars only if content overflows the box.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+
+</body>
+</html>
