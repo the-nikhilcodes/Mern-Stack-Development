@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .boxes {
+      border: 2px solid gray;
+      padding: 20px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    /* Adds text before the .boxes container */
+    .boxes::before {
+      content: "Nikhil is good ";
+      color: blue;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* Adds text after the .boxes container */
+    .boxes::after {
+      content: " You are also good person!";
+      color: red;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    /* When user selects text */
+    ::selection {
+      background-color: black;
+      color: aqua;
+    }
+
+    /* Style the first letter of each .box paragraph */
+    .box::first-letter {
+      color: peru;
+      font-size: 45px;
+      font-weight: bold;
+    }
+
+    /* Style placeholder text inside input */
+    input::placeholder {
+      color: rgb(84, 84, 88);
+      font-style: italic;
+    }
+
+    .box {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="boxes">
+    <div class="box">this is box one. notice the big first letter.</div>
+    <div class="box">this is box two. try selecting some text!</div>
+  </div>
+
+  <input type="text" placeholder="Enter your name here">
+
+</body>
+</html>
