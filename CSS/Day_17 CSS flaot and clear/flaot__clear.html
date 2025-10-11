@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Float and Clear Example</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      color: white;
+      text-align: center;
+      line-height: 150px;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .left {
+      float: left;
+      background-color: teal;
+    }
+
+    .right {
+      float: right;
+      background-color: tomato;
+    }
+
+    .content {
+      background-color: lightgray;
+      padding: 20px;
+      clear: both; /* This stops floating boxes from overlapping this element */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box left">Left Float</div>
+  <div class="box right">Right Float</div>
+
+  <div class="content">
+    <p>This section uses <strong>clear: both;</strong> so it appears below the floated boxes.</p>
+  </div>
+
+</body>
+</html>
