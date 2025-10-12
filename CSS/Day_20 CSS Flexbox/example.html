@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Flexbox Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* FLEX CONTAINER */
+    .flex-container {
+      display: flex;              /* Enables Flexbox */
+      flex-direction: row;        /* row | column | row-reverse | column-reverse */
+      flex-wrap: wrap;            /* wrap items to next line if needed */
+      justify-content: space-around; /* horizontal alignment */
+      align-items: center;        /* vertical alignment */
+      align-content: center;      /* for multiple lines */
+      gap: 20px;                  /* space between items */
+      background-color: #fff;
+      border: 2px solid #333;
+      padding: 20px;
+      height: 300px;
+    }
+
+    /* FLEX ITEMS */
+    .box {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      border-radius: 10px;
+      font-size: 20px;
+      flex-grow: 1;    /* how much the item can grow */
+      flex-shrink: 1;  /* how much the item can shrink */
+      flex-basis: 100px; /* initial size before growing/shrinking */
+    }
+
+    /* Showing item-level properties */
+    .box1 { order: 2; background-color: #2196f3; }
+    .box2 { order: 1; background-color: #e91e63; align-self: flex-start; }
+    .box3 { order: 3; background-color: #ff9800; flex-grow: 2; }
+  </style>
+</head>
+<body>
+
+  <h1>🎯 Simple Flexbox Example</h1>
+
+  <div class="flex-container">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+  </div>
+
+</body>
+</html>
