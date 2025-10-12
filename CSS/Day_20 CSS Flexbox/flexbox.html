@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+    /* Main Flex Container */
+    .flex-container {
+      display: flex;                 /* Enables Flexbox */
+      flex-direction: row;           /* row | row-reverse | column | column-reverse */
+      flex-wrap: wrap;               /* nowrap | wrap | wrap-reverse */
+      justify-content: space-around; /* main-axis alignment */
+      align-items: center;           /* cross-axis alignment */
+      align-content: space-around;   /* for multi-line content */
+      gap: 20px;                     /* space between items */
+      height: 300px;
+      border: 3px solid #333;
+      background-color: #f5f5f5;
+      padding: 10px;
+    }
+
+    /* Flex Items */
+    .flex-item {
+      background-color: #4caf50;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      width: 100px;
+      height: 100px;
+
+      /* Individual item properties */
+      flex-grow: 1;      /* how much the item grows */
+      flex-shrink: 1;    /* how much it shrinks */
+      flex-basis: 150px; /* initial size before grow/shrink */
+    }
+
+    /* Special item styles to show variations */
+    .item1 { order: 3; background: #2196f3; }
+    .item2 { order: 1; background: #e91e63; align-self: flex-start; }
+    .item3 { order: 2; background: #ff9800; flex-grow: 2; }
+  </style>
+</head>
+<body>
+  <h2>🎯 CSS Flexbox Example</h2>
+  <div class="flex-container">
+    <div class="flex-item item1">1️⃣ Item 1</div>
+    <div class="flex-item item2">2️⃣ Item 2</div>
+    <div class="flex-item item3">3️⃣ Item 3</div>
+    <div class="flex-item">4️⃣ Item 4</div>
+    <div class="flex-item">5️⃣ Item 5</div>
+  </div>
+</body>
+</html>
