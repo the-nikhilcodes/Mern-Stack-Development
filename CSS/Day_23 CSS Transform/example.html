@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Transform Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    background: #4caf50;
+    margin: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease;
+    border-radius: 10px;
+  }
+
+  /* Different transform examples */
+  .translate:hover {
+    transform: translate(50px, 30px);
+  }
+
+  .rotate:hover {
+    transform: rotate(45deg);
+  }
+
+  .scale:hover {
+    transform: scale(1.5);
+  }
+
+  .skew:hover {
+    transform: skew(20deg, 10deg);
+  }
+
+  .combo:hover {
+    transform: translate(40px, -20px) rotate(30deg) scale(1.2) skew(10deg, 5deg);
+  }
+
+  .matrix:hover {
+    /* matrix(scaleX, skewY, skewX, scaleY, translateX, translateY) */
+    transform: matrix(1, 0.5, -0.5, 1, 30, 20);
+  }
+
+  h2 {
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+<body>
+
+  <h1>CSS Transform Examples</h1>
+
+  <div>
+    <h2>translate()</h2>
+    <div class="box translate">Hover me</div>
+  </div>
+
+  <div>
+    <h2>rotate()</h2>
+    <div class="box rotate">Hover me</div>
+  </div>
+
+  <div>
+    <h2>scale()</h2>
+    <div class="box scale">Hover me</div>
+  </div>
+
+  <div>
+    <h2>skew()</h2>
+    <div class="box skew">Hover me</div>
+  </div>
+
+  <div>
+    <h2>Combined Transform</h2>
+    <div class="box combo">Hover me</div>
+  </div>
+
+  <div>
+    <h2>matrix()</h2>
+    <div class="box matrix">Hover me</div>
+  </div>
+
+</body>
+</html>
