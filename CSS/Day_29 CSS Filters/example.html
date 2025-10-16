@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Filter Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .box {
+        text-align: center;
+      }
+
+      img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        transition: filter 0.3s ease;
+      }
+
+      /* Different filter effects */
+      .blur img {
+        filter: blur(3px);
+      }
+
+      .grayscale img {
+        filter: grayscale(100%);
+      }
+
+      .brightness img {
+        filter: brightness(1.5);
+      }
+
+      .contrast img {
+        filter: contrast(200%);
+      }
+
+      .sepia img {
+        filter: sepia(100%);
+      }
+
+      .hover img:hover {
+        filter: blur(2px) brightness(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Filter Examples</h1>
+    <div class="container">
+      <div class="box blur">
+        <p>Blur</p>
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-shot-river-through-village-surrounded-by-hills-mountains-greenery_181624-41644.jpg?semt=ais_hybrid&w=740&q=80"
+          alt="Blur Example"
+        />
+      </div>
+
+      <div class="box grayscale">
+        <p>Grayscale</p>
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-shot-river-through-village-surrounded-by-hills-mountains-greenery_181624-41644.jpg?semt=ais_hybrid&w=740&q=80"
+          alt="Grayscale Example"
+        />
+      </div>
+
+      <div class="box brightness">
+        <p>Brightness</p>
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-shot-river-through-village-surrounded-by-hills-mountains-greenery_181624-41644.jpg?semt=ais_hybrid&w=740&q=80"
+          alt="Brightness Example"
+        />
+      </div>
+
+      <div class="box contrast">
+        <p>Contrast</p>
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-shot-river-through-village-surrounded-by-hills-mountains-greenery_181624-41644.jpg?semt=ais_hybrid&w=740&q=80"
+          alt="Contrast Example"
+        />
+      </div>
+
+      <div class="box sepia">
+        <p>Sepia</p>
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-shot-river-through-village-surrounded-by-hills-mountains-greenery_181624-41644.jpg?semt=ais_hybrid&w=740&q=80"
+          alt="Sepia Example"
+        />
+      </div>
+
+      <div class="box hover">
+        <p>Hover Effect</p>
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-shot-river-through-village-surrounded-by-hills-mountains-greenery_181624-41644.jpg?semt=ais_hybrid&w=740&q=80"
+          alt="Hover Example"
+        />
+      </div>
+    </div>
+  </body>
+</html>
