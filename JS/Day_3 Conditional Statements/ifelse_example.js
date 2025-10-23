@@ -1,19 +1,19 @@
 // Example variable
 let score = 75;
 
-// 1️⃣ Simple if statement
+//  Simple if statement
 if (score > 50) {
     console.log("You passed the test!");
 }
 
-// 2️⃣ if...else statement
+//  if...else statement
 if (score >= 80) {
     console.log("Excellent performance!");
 } else {
     console.log("Good effort, but you can improve.");
 }
 
-// 3️⃣ if...else if...else chain
+//  if...else if...else chain
 if (score >= 90) {
     console.log("Grade: A");
 } else if (score >= 80) {
@@ -26,7 +26,7 @@ if (score >= 90) {
     console.log("Grade: F");
 }
 
-// 4️⃣ Nested if statements
+//  Nested if statements
 let attendance = 90;
 
 if (score >= 60) {
@@ -39,7 +39,7 @@ if (score >= 60) {
     console.log("You failed the exam.");
 }
 
-// 5️⃣ Using logical operators with if
+//  Using logical operators with if
 let hasProject = true;
 
 if (score >= 70 && hasProject) {
