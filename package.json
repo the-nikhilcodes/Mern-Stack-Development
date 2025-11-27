@@ -1,0 +1,23 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "> A comprehensive, hands-on repository covering the complete web development stack from HTML basics to full-stack MERN applications. Perfect for beginners and intermediate developers looking to master modern web development!",
+  "main": "Express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-nikhilcodes/Mern-Stack-Development.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-nikhilcodes/Mern-Stack-Development/issues"
+  },
+  "homepage": "https://github.com/the-nikhilcodes/Mern-Stack-Development#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.17"
+  }
+}
